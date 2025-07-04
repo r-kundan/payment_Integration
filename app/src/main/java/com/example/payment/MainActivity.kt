@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity(), PaymentResultListener {
         payButton.setOnClickListener {
             val amount = editTextAmount.text.toString().trim()
             if (amount.isNotEmpty()) {
-                startUPIPayment(amount, "7493882135-3@ybl", "vicky", "Payment for testing")
+                startUPIPayment(amount, "renkundan-1@okaxis", "Renu Kundan", "Payment for testing")
             } else {
                 Toast.makeText(this, "Please enter an amount", Toast.LENGTH_SHORT).show()
             }
